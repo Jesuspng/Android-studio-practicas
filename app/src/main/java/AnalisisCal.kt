@@ -7,8 +7,8 @@ val cal = AnalisisCal();
     print(cal.calcularPromedio());
     print("\ncantidad de aprobadas ${cal.contarAprobadas()}");
     print("\ncantidad de reprobadas ${cal.contarReprobadas()}");
-    print("\nCalificacion minima ${cal.calificacionMinnima()}");
-    print("\nCalificacion maxima ${cal.calificacionMaxima()}");
+    print("\nCalificacion minima: ${cal.calificacionMinnima()}");
+    print("\nCalificacion maxima: ${cal.calificacionMaxima()}");
 
 
 
