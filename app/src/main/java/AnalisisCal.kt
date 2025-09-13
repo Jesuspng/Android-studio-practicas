@@ -5,7 +5,7 @@ val cal = AnalisisCal();
 
     cal.llenar();
     print(cal.calcularPromedio());
-    print("\ncantidad de aprobadas ${cal.contarAprobadas()}");
+    print("\ncantidad de aprobadas ${cal.contarcalAprobadas()}");
     print("\ncantidad de reprobadas ${cal.contarReprobadas()}");
     print("\nCalificacion minima: ${cal.calificacionMinnima()}");
     print("\nCalificacion maxima: ${cal.calificacionMaxima()}");
@@ -38,7 +38,7 @@ class AnalisisCal {
         return prom/7;
     }
 
-    fun contarAprobadas():Int{
+    fun contarcalAprobadas():Int{
         var aprobadas:Int;
         aprobadas=0;
 
