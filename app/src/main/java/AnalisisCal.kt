@@ -7,8 +7,8 @@ val cal = AnalisisCal();
     print(cal.calcularPromedio());
     print("\ncantidad de aprobadas ${cal.contarAprobadas()}");
     print("\ncantidad de reprobadas ${cal.contarReprobadas()}");
-    print("\nCalificacion minima ${cal.calMinnima()}");
-    print("\nCalificacion maxima ${cal.calMaxima()}");
+    print("\nCalificacion minima ${cal.calificacionMinnima()}");
+    print("\nCalificacion maxima ${cal.calificacionMaxima()}");
 
 
 
@@ -63,7 +63,7 @@ class AnalisisCal {
             return reprobadas
         }
 
-    fun calMaxima():Float{
+    fun calificacionMaxima():Float{
         var max: Float;
         max=0F;
         for(i in 0..6){
@@ -74,9 +74,9 @@ class AnalisisCal {
         return max
     }
 
-    fun calMinnima(): Float{
+    fun calificacionMinnima(): Float{
         var min: Float;
-        min=this.calMaxima();
+        min=this.calificacionMaxima();
         for(i in 0..6){
             if(calificaciones.get(i)<min){
                 min=calificaciones.get(i);
